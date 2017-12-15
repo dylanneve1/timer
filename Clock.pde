@@ -1,3 +1,8 @@
 class Clock
 {
+
+  void show
+  {
+  }
+  
 }
