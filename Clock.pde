@@ -1,7 +1,7 @@
 class Clock
 {
 
-  void show
+  void show()
   {
   }
   
