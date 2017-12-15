@@ -3,19 +3,13 @@ class Clock
   
   boolean callNewTime = false;
   float time;
-  float timeSinceStart;
+  float timeSinceStart = 0;
   float x = 240;
   float y = 240;
   
-  void sinceStart()
-  {
-    timeSinceStart = millis();
-    time = millis() - timeSinceStart;
-  }
-  
   void refreshTime()
   {
-    time = millis();
+    time = millis() - timeSinceStart;
     if(keyPressed == true) 
     {
       if(key == 'r') {
