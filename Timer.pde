@@ -16,9 +16,11 @@ void draw()
 
 void newTime()
 {
-  if(clock.callNewTime == true)
+  if(keyPressed == true)
   {
-    clock.sinceStart();
-    clock.callNewTime = false;
+    if(key == 'r')
+    {
+      clock.timeSinceStart = millis();
+    }
   }
 }
