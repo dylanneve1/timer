@@ -9,6 +9,7 @@ void setup()
 void draw()
 {
   background(0);
+  newTime();
   clock.refreshTime();
   clock.show();
 }
