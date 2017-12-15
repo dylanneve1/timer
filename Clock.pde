@@ -1,7 +1,6 @@
 class Clock
 {
-  
-  boolean callNewTime = false;
+
   float rawTime;
   float timeSinceStart = 0;
   float x = 240;
@@ -12,12 +11,6 @@ class Clock
   {
     rawTime = millis() - timeSinceStart;
     shownTime = rawTime/1000;
-    if(keyPressed == true) 
-    {
-      if(key == 'r') {
-        callNewTime = true;
-      }
-    }
   }
   
   void show()
@@ -26,5 +19,4 @@ class Clock
     textSize(20);
     text(shownTime, x, y);
   }
-  
 }
