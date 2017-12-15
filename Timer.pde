@@ -12,3 +12,12 @@ void draw()
   clock.refreshTime();
   clock.show();
 }
+
+void newTime()
+{
+  if(clock.callNewTime == true)
+  {
+    clock.sinceStart();
+    clock.callNewTime = false;
+  }
+}
